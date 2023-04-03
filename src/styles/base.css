@@ -1,0 +1,56 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .gradien {
+        background: rgb(255,142,84);
+        background: -moz-linear-gradient(133deg, rgba(255,142,84,1) -11.75%, rgba(218,51,208,1) 45.33%, rgba(120,50,215,1) 98.96%);
+        background: -webkit-linear-gradient(133deg, rgba(255,142,84,1) -11.75%, rgba(218,51,208,1) 45.33%, rgba(120,50,215,1) 98.96%);
+        background: linear-gradient(133deg, rgba(255,142,84,1) -11.75%, rgba(218,51,208,1) 45.33%, rgba(120,50,215,1) 98.96%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8e54",endColorstr="#7832d7",GradientType=1);
+    }
+    .gradienText {
+        background: rgb(255,142,84);
+        background: -moz-linear-gradient(133deg, rgba(255,142,84,1) -11.75%, rgba(218,51,208,1) 45.33%, rgba(120,50,215,1) 98.96%);
+        background: -webkit-linear-gradient(133deg, rgba(255,142,84,1) -11.75%, rgba(218,51,208,1) 45.33%, rgba(120,50,215,1) 98.96%);
+        background: linear-gradient(133deg, rgba(255,142,84,1) -11.75%, rgba(218,51,208,1) 45.33%, rgba(120,50,215,1) 98.96%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8e54",endColorstr="#7832d7",GradientType=1);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#fd963a",GradientType=1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+ 
+@font-face {
+    font-family: "EudoxusVariable";
+    src: url("../fonts/EudoxusSansGX.ttf") format("ttf-variations"),
+         url("../fonts/EudoxusSansGX.woff") format("woff-variations") ,
+         url("../fonts/EudoxusSansGX.woff2") format("woff2-variations");
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Eudoxus';
+    src: url("../fonts/EudoxusSans-Regular.ttf") format('woff2'),
+         url("../fonts/EudoxusSans-Regular.woff") format('woff'),
+         url("../fonts/EudoxusSans-Regular.woff2") format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Eudoxus';
+    src: url("../fonts/EudoxusSans-Medium.ttf") format('woff2'),
+         url("../fonts/EudoxusSans-Medium.woff") format('woff'),
+         url("../fonts/EudoxusSans-Medium.woff2") format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Eudoxus';
+    src: url("../fonts/EudoxusSans-Bold.ttf") format('woff2'),
+         url("../fonts/EudoxusSans-Bold.woff") format('woff'),
+         url("../fonts/EudoxusSans-Bold.woff2") format('truetype');
+    font-weight: 700;
+}
