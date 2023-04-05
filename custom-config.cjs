@@ -27,7 +27,6 @@ module.exports = {
 			Eudoxus: ['Eudoxus'],
 		},
 		extend: {
-
 			colors : {
 				'lightbackground' : "#FFFFFF",
 				'darkbackground': "#090A0B",
