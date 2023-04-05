@@ -1,7 +1,30 @@
 ---
-import Swe from "../assets/Swe.png"
-import Bm from "../assets/Bm.png"
-import Ss from "../assets/Ss.png"
+import Swe from "../assets/Swe.png";
+import Bm from "../assets/Bm.png";
+import Ss from "../assets/Ss.png";
+import ServiceCard from "./ServiceCard";
+import Services from "./Services";
+
+const ServicesInfo = [
+  {
+    name: "Seamless Web  Experiences",
+    description:
+      "Otonom is dedicated to designing exceptional web experiences with intuitive design, mobile-responsiveness, and exceptional service to help clients succeed online.",
+    image: Swe,
+  },
+  {
+    name: "Branding Mastery",
+    description:
+      "Otonom is dedicated to designing exceptional web experiences with intuitive design, mobile-responsiveness, and exceptional service to help clients succeed online.",
+    image: Bm,
+  },
+  {
+    name: "SEO Supercharge",
+    description:
+      "Otonom is dedicated to designing exceptional web experiences with intuitive design, mobile-responsiveness, and exceptional service to help clients succeed online.",
+    image: Ss,
+  },
+];
 ---
 
 <section class="px-[12.5vw] py-16">
@@ -13,68 +36,98 @@ import Ss from "../assets/Ss.png"
       How we can make your business evolve.
     </p>
   </div>
-  <div class="flex justify-between items-center gap-4 container h-[65vh] xl:h-[50vh]">
-    <div class="group overflow-hidden w-[65%] h-full grow bg-[#DA33D0] ease duration-700 cursor-pointer rounded-xl relative flex flex-col gap-3 jusfity-between items-start pl-4 pt-8 target ">
-        <div class="h-[28px] w-[25px] bg-black opacity-30 group-hover:opacity-100">
+  <Services services={ServicesInfo} client:only />
 
+  <!-- <div
+      class="group overflow-hidden w-[65%] h-full grow bg-[#DA33D0] ease duration-700 cursor-pointer rounded-xl relative flex flex-col gap-3 jusfity-between items-start pl-4 pt-8 target"
+    >
+      <div
+        class="h-[28px] w-[25px] bg-black opacity-30 group-hover:opacity-100"
+      >
+      </div>
+      <h4 class="text-xl font-meduim text-white leading-[171%] title">
+        Seamless Web <br /> Experiences
+      </h4>
+      <p
+        class="text-sm font-normal w-[20vw] text-white leading-[200%] paragraph"
+      >
+        Otonom is dedicated to designing exceptional web experiences with
+        intuitive design, mobile-responsiveness, and exceptional service to help
+        clients succeed online.
+      </p>
+      <div
+        class="absolute bottom-0 right-0 h-1/2 w-[15vw]"
+        style={{
+          backgroundImage: `url(${Swe})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top left",
+        }}
+      >
+      </div>
+    </div>
+    <div
+      class="group overflow-hidden w-1/3 h-full grow hover:w-[65%] bg-[#F2F2F5] hover:bg-[#FF742D] ease duration-700 cursor-pointer rounded-xl relative flex justify-start items-end pl-4 gap-3 pb-8"
+    >
+      <div class="flex flex-col justify-center items-start gap-3">
+        <div
+          class="h-[28px] w-[25px] bg-black opacity-30 group-hover:opacity-100"
+        >
         </div>
-        <h4 class="text-xl font-meduim text-white leading-[171%] title">
-            Seamless Web <br/> Experiences
+        <h4
+          class="text-xl font-meduim text-blue group-hover:text-white opacity-30 group-hover:opacity-100"
+        >
+          Branding <br /> Mastery
         </h4>
-        <p class="text-sm font-normal w-[20vw] text-white leading-[200%] paragraph">
-            Otonom is dedicated to designing exceptional web experiences with 
-            intuitive design, mobile-responsiveness, and exceptional service to help clients 
-            succeed online.
-        </p> 
-        <div class="absolute bottom-0 right-0 h-1/2 w-[15vw]" style={{
-            backgroundImage: `url(${Swe})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'top left',
-          }} />
+      </div>
+      <p
+        class="text-sm font-normal w-[20vw] text-white leading-[200%] hidden group-hover:block"
+      >
+        Otonom is dedicated to designing exceptional web experiences with
+        intuitive design, mobile-responsiveness, and exceptional service to help
+        clients succeed online.
+      </p>
+      <div
+        class="absolute top-0 right-0 h-2/5 w-2/3 rounded-bl-xl"
+        style={{
+          backgroundImage: `url(${Bm})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top left",
+        }}
+      >
+      </div>
     </div>
 
-    <div class="group overflow-hidden w-1/3 h-full grow hover:w-[65%]  bg-[#F2F2F5] hover:bg-[#FF742D] ease duration-700 cursor-pointer rounded-xl relative flex justify-start items-end pl-4 gap-3 pb-8">
-        <div class="flex flex-col justify-center items-start gap-3">
-            <div class="h-[28px] w-[25px] bg-black  opacity-30 group-hover:opacity-100">
-
-            </div>
-            <h4 class="text-xl font-meduim text-blue group-hover:text-white opacity-30 group-hover:opacity-100">
-                Branding <br/> Mastery
-            </h4>
+    <div
+      class="group overflow-hidden w-1/3 h-full grow hover:w-[65%] bg-[#F2F2F5] hover:bg-[#07184F] ease duration-700 cursor-pointer rounded-xl relative flex flex-col justify-between items-start pl-4 py-8"
+    >
+      <div class="flex flex-col justify-center items-start gap-3">
+        <div
+          class="h-[28px] w-[25px] bg-black opacity-30 group-hover:opacity-100"
+        >
         </div>
-            <p class="text-sm font-normal w-[20vw] text-white leading-[200%] hidden group-hover:block ">
-                Otonom is dedicated to designing exceptional web experiences with 
-                intuitive design, mobile-responsiveness, and exceptional service to help clients 
-                succeed online.
-            </p> 
-        <div class="absolute top-0 right-0 h-2/5 w-2/3 rounded-bl-xl" style={{
-            backgroundImage: `url(${Bm})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'top left',
-          }}/>
-    </div>
-
-    <div class="group overflow-hidden w-1/3 h-full grow hover:w-[65%] bg-[#F2F2F5] hover:bg-[#07184F] ease duration-700 cursor-pointer rounded-xl relative flex flex-col justify-between items-start pl-4 py-8">
-        <div class="flex flex-col justify-center items-start gap-3">
-            <div class="h-[28px] w-[25px] bg-black  opacity-30 group-hover:opacity-100">
-
-            </div>
-            <h4 class="text-xl font-meduim text-blue group-hover:text-white opacity-30 group-hover:opacity-100">
-                SEO  <br/> Supercharge
-            </h4>
-        </div>
-        <p class="text-sm font-normal w-[22vw] text-white leading-[200%] hidden group-hover:block ">
-            Otonom is dedicated to designing exceptional web experiences with 
-            intuitive design, mobile-responsiveness, and exceptional service to help clients 
-            succeed online.
-        </p> 
-        <div class="absolute bottom-1/3 right-0 h-2/5 w-2/5" style={{
-            backgroundImage: `url(${Ss})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'top left',
-          }} />
-  </div>
-</div>
+        <h4
+          class="text-xl font-meduim text-blue group-hover:text-white opacity-30 group-hover:opacity-100"
+        >
+          SEO <br /> Supercharge
+        </h4>
+      </div>
+      <p
+        class="text-sm font-normal w-[22vw] text-white leading-[200%] hidden group-hover:block"
+      >
+        Otonom is dedicated to designing exceptional web experiences with
+        intuitive design, mobile-responsiveness, and exceptional service to help
+        clients succeed online.
+      </p>
+      <div
+        class="absolute bottom-1/3 right-0 h-2/5 w-2/5"
+        style={{
+          backgroundImage: `url(${Ss})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top left",
+        }}
+      >
+      </div>
+    </div> -->
 </section>
 
 <script>
@@ -85,21 +138,21 @@ import Ss from "../assets/Ss.png"
 
   divs.forEach((div) => {
     div.addEventListener("mouseenter", () => {
-        first.style.cssText = "width: 33%; background-color: #F2F2F5;";
-        title.style.cssText = " color: #07184F; opacity: .3;"
-        paragraph.style.display = "none";
+      first.style.cssText = "width: 33%; background-color: #F2F2F5;";
+      title.style.cssText = " color: #07184F; opacity: .3;";
+      paragraph.style.display = "none";
     });
 
     div.addEventListener("mouseleave", () => {
       first.style.cssText = "width: 65%; background-color: #DA33D0;";
-      title.style.cssText = " color: white; opacity: 1;"
+      title.style.cssText = " color: white; opacity: 1;";
       paragraph.style.display = "block";
     });
   });
 
   first.addEventListener("mouseenter", () => {
     first.style.cssText = "width: 65%; background-color: #DA33D0;";
-      title.style.cssText = " color: white; opacity: 1;"
-      paragraph.style.display = "block";
+    title.style.cssText = " color: white; opacity: 1;";
+    paragraph.style.display = "block";
   });
 </script>
