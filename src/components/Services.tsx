@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 export default function Services({
   services,
 }: {
-  services: { name: string; image: string; description: string }[];
+  services: { firstPart: string; secondPart: string; image: string; description: string }[];
 }) {
   const [hovered, setIsHovered] = useState<number>(0);
   return (
@@ -14,7 +14,8 @@ export default function Services({
           <ServiceCard
             key={idx}
             id={idx}
-            name={service.name}
+            firstPart={service.firstPart}
+            secondPart={service.secondPart}
             description={service.description}
             image={service.image}
             setIsHovered={setIsHovered}
