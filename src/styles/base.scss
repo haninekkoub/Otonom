@@ -21,6 +21,14 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    .gradienImage {
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(90deg, rgba(255,255,255,0.47) 22%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 97%);
+        background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.47) 22%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 97%);
+        background: linear-gradient(90deg, rgba(255,255,255,0.47) 22%, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 97%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    
+    }
 }
  
 @font-face {

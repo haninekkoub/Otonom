@@ -1,6 +1,8 @@
 ---
 import About from '../components/About.astro';
+import Banner from '../components/Banner';
 import Contact from '../components/Contact.astro';
+import CtaButton from '../components/CtaButton.astro';
 import FooterLinks from '../components/FooterLinks.astro';
 import Hero from '../components/Hero.astro';
 import Navbar from '../components/Navbar.astro';
@@ -11,12 +13,14 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Welcome to Astro.">
 	<main >
-		 <Navbar />
+		<Navbar />
 		<Hero />
+		<Banner client:load />
 		<Works />
 		<About /> 
-		<Services />
-		 <Contact />
-		<FooterLinks /> 
+		<Services /> 
+		<Contact />
+		<FooterLinks />  
+
 	</main>
 </Layout>
