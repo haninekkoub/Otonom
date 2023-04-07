@@ -9,8 +9,8 @@ module.exports = {
 		  xl: '1440px',
 		},
 		fontSize: {
-			'xs': '1rem',
-			'sm': '1rem',
+			'xs': '0.875rem',    // 14
+			'sm': '1rem',        // 16
 			'base': '1.125rem',  // 18
 			'lg': '1.25rem',     // 20
 			'xl': '1.75rem',     // 28
@@ -26,28 +26,7 @@ module.exports = {
 			EudoxusVariable: ['EudoxusVariable'],
 			Eudoxus: ['Eudoxus'],
 		},
-		keyframes: {
-			widthIn:{
-			  '0%': { width: '0%' },
-			  '100%': { width: '100%' },
-			},
-			widthOut:{
-				'0%': { width: '100%' },
-				'100%': { width: '0%' },
-			  },
-			fadeLeft:{
-			  '0%': { transform: 'translateX(0%)' },
-			  '100%': { transform: 'translateX(100%)' },
-			},
-			fadeUp: {
-			  '0%': { transform: 'translateY(100%)' },
-			  '100%': { transform: 'translateY(0%)' },
-			},
-			rotateY:{
-				'0%': { transform: 'translateY(0%)' },
-				'100%': { transform: 'translateY(425%)' },
-			},
-		},		
+			
 		extend: {
 			colors : {
 				'lightbackground' : "#FFFFFF",
@@ -70,7 +49,29 @@ module.exports = {
 			},
 			borderRadius: {
 				'xl': '16px',
-			}
+			},
+			keyframes: {
+				widthIn:{
+				  '0%': { width: '0%' },
+				  '100%': { width: '100%' },
+				},
+				widthOut:{
+					'0%': { width: '100%' },
+					'100%': { width: '0%' },
+				  },
+				fadeLeft:{
+				  '0%': { transform: 'translateX(0%)' },
+				  '100%': { transform: 'translateX(100%)' },
+				},
+				fadeUp: {
+				  '0%': { transform: 'translateY(100%)' },
+				  '100%': { transform: 'translateY(0%)' },
+				},
+				rotateY:{
+					'0%': { transform: 'translateY(0%)' },
+					'100%': { transform: 'translateY(425%)' },
+				},
+			},	
 		}
 	  },
 	plugins: [],
