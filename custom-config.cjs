@@ -36,6 +36,7 @@ module.exports = {
 				'white' : "#FFFFFF",
 				'black': "#000000",
 				'gray' : "#C1C4CF",
+				'violet' : "#DA33D0",
 				'gradientColor' : [
 					  'rgb(255,142,84)',
 					  'rgba(218,51,208,1)',

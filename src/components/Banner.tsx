@@ -40,7 +40,7 @@ export default function Banner() {
   );
 
   return (
-    <section className="w-full h-[300px] bg-[#F2F2F5] overflow-hidden relative">
+    <section className="w-full h-[320px] bg-[#F2F2F5] overflow-hidden relative">
       <motion.div className="flex gap-6 justify-center items-center rotate-12">
         <motion.div
           className="flex flex-col justify-center items-center gap-6 grow"
@@ -50,7 +50,7 @@ export default function Banner() {
             return (
               <motion.div
                 key={i}
-                className="w-full h-[200px]"
+                className="w-full h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
@@ -68,7 +68,7 @@ export default function Banner() {
             return (
               <motion.div
                 key={i}
-                className="w-full h-[200px]"
+                className="w-full h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
@@ -86,7 +86,7 @@ export default function Banner() {
             return (
               <motion.div
                 key={i}
-                className="w-full h-[200px]"
+                className="w-full h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",

@@ -1,6 +1,4 @@
 import clsx from "clsx";
-import { useState } from "react";
-import Logo from '../icons/Logo.svg'
 export default function ServiceCard({
   firstPart,
   secondPart,
@@ -12,7 +10,7 @@ export default function ServiceCard({
 }: {
   firstPart: string;
   secondPart: string;
-  description: string;
+  description: string; 
   image: string;
   setIsHovered: any;
   hovered: number;
@@ -28,40 +26,44 @@ export default function ServiceCard({
       onMouseEnter={() => setIsHovered(id)}
       className={clsx(
         [
-          "group overflow-hidden h-full w-1/3 grow bg-[#DA33D0]",
+          "group overflow-hidden h-full w-1/3 grow bg-[#F2F2F5]",
           "ease duration-300 cursor-pointer rounded-xl relative",
-          "flex gap-3 px-4 py-6 target",
+          "flex gap-3 px-4 py-6 ",
         ],
         {
           "flex-col justify-start items-start ": firstComponent,
           "flex-row justify-start items-end": secondComponent,
-          " flex-col justify-between items-start": thirdComponent,
-          "bg-[#DA33D0] w-[65%]": hoverState,
+          "flex-col justify-between items-start ": thirdComponent,
+          "w-[65%]": hoverState,
+          "bg-violet": firstComponent && hoverState,
+          "bg-[#FF742D]": secondComponent && hoverState,
+          "bg-indigo-500": thirdComponent && hoverState,
         }
       )}
     >
       <div>
         <div className="h-[28px] w-[25px] bg-black opacity-30 group-hover:opacity-100"></div>
-        <h4 className="text-xl font-meduim text-white leading-[171%]">
+        <h4 className="text-xl font-meduim text-white leading-[171%] whitespace-nowrap">
           { firstPart} <br /> {secondPart}
         </h4>
       </div>
-      <p className= {clsx( [ "text-sm font-normal text-white leading-[200%] hidden relative"],
+      <p className= {clsx( [ "text-sm font-normal text-white leading-[200%] relative opacity-0"],
         {
           "w-[18vw]": firstComponent,
-          "w-[15vw]": secondComponent,
+          "w-[22vw]": secondComponent,
           "w-[20vw]": thirdComponent,
-          "block": hoverState,
+          "opacity-100": hoverState,
+          
         }
       )}>
         {description}
       </p>
       <div
-        className={clsx( ["absolute right-0 h-1/2 w-[15vw]",],
+        className={clsx( ["absolute right-0 h-3/5 ",],
           {
-            "bottom-0 ": firstComponent,
-            "top-0 ": secondComponent,
-            "bottom-1/3": thirdComponent,
+            "bottom-0 w-[50%]": firstComponent,
+            "top-0 w-[65%]": secondComponent,
+            "top-[30%] w-[50%]": thirdComponent,
           }
         )}
         style={{
