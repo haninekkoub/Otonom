@@ -8,7 +8,7 @@ export default function Services({
 }) {
   const [hovered, setIsHovered] = useState<number>(0);
   return (
-    <div className="flex justify-between items-center gap-4 container h-[65vh] xl:h-[50vh]">
+    <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
       {services.map((service, idx) => {
         return (
           <ServiceCard
@@ -23,7 +23,6 @@ export default function Services({
           />
         );
       })}
-      ;
     </div>
   );
 }

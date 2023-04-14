@@ -26,15 +26,15 @@ export default function ServiceCard({
       onMouseEnter={() => setIsHovered(id)}
       className={clsx(
         [
-          "group overflow-hidden h-full w-1/3 grow bg-[#F2F2F5]",
+          "group overflow-hidden grow w-full lg:w-1/3 h-[30vh] lg:h-[65vh] xl:h-[50vh] bg-[#F2F2F5] ",
           "ease duration-300 cursor-pointer rounded-xl relative",
-          "flex gap-3 px-4 py-6 ",
+          "flex gap-3 px-4 py-6",
         ],
         {
           "flex-col justify-start items-start ": firstComponent,
-          "flex-row justify-start items-end": secondComponent,
-          "flex-col justify-between items-start ": thirdComponent,
-          "w-[65%]": hoverState,
+          "flex-col md:flex-row justify-start items-start md:items-end": secondComponent,
+          "flex-col justify-start md:justify-between items-start ": thirdComponent,
+          "md:w-[65%] h-[60vh] ": hoverState,
           "bg-violet": firstComponent && hoverState,
           "bg-[#FF742D]": secondComponent && hoverState,
           "bg-indigo-500": thirdComponent && hoverState,
@@ -47,11 +47,11 @@ export default function ServiceCard({
           { firstPart} <br /> {secondPart}
         </h4>
       </div>
-      <p className= {clsx( [ "text-sm font-normal text-white leading-[200%] relative opacity-0"],
+      <p className= {clsx( [ "text-sm font-normal text-white leading-[200%] relative opacity-0 w-full"],
         {
-          "w-[18vw]": firstComponent,
-          "w-[22vw]": secondComponent,
-          "w-[20vw]": thirdComponent,
+          "md:w-[18vw]": firstComponent,
+          "md:w-[22vw]": secondComponent,
+          "md:w-[20vw]": thirdComponent,
           "opacity-100": hoverState,
           
         }
@@ -59,7 +59,7 @@ export default function ServiceCard({
         {description}
       </p>
       <div
-        className={clsx( ["absolute right-0 h-3/5 ",],
+        className={clsx( ["absolute right-0 h-3/5 hidden md:block ",],
           {
             "bottom-0 w-[50%]": firstComponent,
             "top-0 w-[65%]": secondComponent,
