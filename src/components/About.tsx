@@ -17,19 +17,19 @@ export default function About() {
   });
 
   return (
-    <motion.section className="bg-darkbackground px-[12.5vw] py-16">
-      <motion.div className="flex justify-center items-end gap-28 pb-16 relative ">
-        <motion.div className="w-[30vw] h-[30vw] mt-16 relative overflow-hidden sticky top-0">
+    <motion.section className="bg-darkbackground px-[5vw] md:px-[12.5vw] py-16">
+      <motion.div className="flex flex-col md:flex-row justify-center md:items-end md:gap-28 md:pb-16 relative pb-16">
+        <motion.div className="w-[90vw] md:w-[30vw] h-[40vh] md:h-[30vw] md:mt-16 relative overflow-hidden">
           <motion.div
-            className="w-[35vw] h-[35vw]  bg-no-repeat bg-cover absolute top-0"
+            className="w-[100vw] md:w-[35vw] h-[50vh] md:h-[35vw]  bg-no-repeat bg-cover absolute top-0"
             style={{ y: y1, backgroundImage: `url(${About01})` }}
           />
         </motion.div>
         <div>
-          <h2 className="text-aboutTitle text-white font-bold  w-[36.6vw] absolute top-0 left-1/2 transform -translate-x-1/2">
+          <h2 className="text-xl md:text-aboutTitle text-white font-bold w-[80vw] md:w-[36.6vw] static md:absolute md:top-0 md:left-1/2 md:transform md:-translate-x-1/2 pb-4 md:pb-0">
             Elevating Your Brand with Immersive Web Experiences
           </h2>
-          <h5 className="text-lg leading-[160%] text-[#D9DDF2] text-justify w-[36vw] leading-[160%]">
+          <h5 className="text-base md:text-lg leading-[160%] text-[#D9DDF2] text-justify w-[90vw] md:w-[36vw] leading-[160%]">
             At Otonom, we specialize in creating unique and immersive web
             experiences that help modern brands stand out in the digital world.
             Our focus on customization ensures that each project we undertake is
@@ -38,19 +38,19 @@ export default function About() {
           </h5>
         </div>
       </motion.div>
-      <motion.div className="flex flex-row-reverse justify-center items-end gap-28 relative">
-        <motion.div className="w-[30vw] h-[30vw] mt-16 relative overflow-hidden">
+      <motion.div className="flex flex-col md:flex-row-reverse justify-center items-end md:gap-28 relative">
+        <motion.div className="w-[90vw] md:w-[30vw] h-[40vh] md:h-[30vw] md:mt-16 relative overflow-hidden">
           <motion.div
-            className="w-[35vw] h-[35vw]  bg-no-repeat bg-cover absolute top-0"
+            className="w-[100vw] md:w-[35vw] h-[50vh] md:h-[35vw]  bg-no-repeat bg-cover absolute top-0"
             style={{ y: y2, backgroundImage: `url(${About02})` }}
           />
         </motion.div>
 
         <div>
-          <h2 className="text-aboutTitle text-white font-bold w-[30vw] text-right absolute top-0 left-1/2 transform -translate-x-1/2">
+          <h2 className="text-xl md:text-aboutTitle text-white font-bold w-[80vw] md:w-[30vw] md:text-right static md:absolute md:top-0 md:left-1/2 md:transform md:-translate-x-1/2 pb-4 md:pb-0">
             Tailored Web Design Solutions for Modern Brands
           </h2>
-          <h5 className="text-lg leading-[160%] text-[#D9DDF2] text-justify w-[36vw] leading-[160%]">
+          <h5 className="text-base md:text-lg leading-[160%] text-[#D9DDF2] text-justify w-[90vw] md:w-[36vw] leading-[160%]">
             At Otonom, we specialize in creating unique and immersive web
             experiences that help modern brands stand out in the digital world.
             Our focus on customization ensures that each project we undertake is
