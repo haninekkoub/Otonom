@@ -27,23 +27,23 @@ export default function ServiceCard({
       className={clsx(
         [
           "group overflow-hidden grow w-full lg:w-1/3 h-[30vh] lg:h-[65vh] xl:h-[50vh] bg-[#F2F2F5] ",
-          "ease duration-300 cursor-pointer rounded-xl relative",
+          "ease duration-300 cursor-pointer rounded-xl relative text-gray",
           "flex gap-3 px-4 py-6",
         ],
         {
           "flex-col justify-start items-start ": firstComponent,
           "flex-col md:flex-row justify-start items-start md:items-end": secondComponent,
           "flex-col justify-start md:justify-between items-start ": thirdComponent,
-          "md:w-[65%] h-[60vh] ": hoverState,
-          "bg-violet": firstComponent && hoverState,
-          "bg-[#FF742D]": secondComponent && hoverState,
-          "bg-indigo-500": thirdComponent && hoverState,
+          "md:w-[65%] h-[60vh] text-white": hoverState,
+          "bg-violet ": firstComponent && hoverState,
+          "bg-[#FF742D] ": secondComponent && hoverState,
+          "bg-indigo-500 ": thirdComponent && hoverState,
         }
       )}
     >
       <div>
         <div className="h-[28px] w-[25px] bg-black opacity-30 group-hover:opacity-100"></div>
-        <h4 className="text-xl font-meduim text-white leading-[171%] whitespace-nowrap">
+        <h4 className="text-xl font-meduim leading-[171%] whitespace-nowrap">
           { firstPart} <br /> {secondPart}
         </h4>
       </div>
