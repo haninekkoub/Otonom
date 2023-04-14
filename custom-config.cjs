@@ -62,7 +62,10 @@ module.exports = {
 				  },
 				fadeLeft:{
 				  '0%': { transform: 'translateX(0%)' },
-				  '100%': { transform: 'translateX(100%)', display: 'none' },
+				  '100%': { 
+							transform: 'translateX(100%)', 
+				  			display: 'none', 
+						  },
 				},
 				fadeUp: {
 				  '0%': { transform: 'translateY(100%)' },
