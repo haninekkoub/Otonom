@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <motion.section className="bg-darkbackground w-[100%] px-4 md:px-[5vw] md:px-[12.5vw] py-16">
-      <motion.div className="flex flex-col md:flex-row justify-center md:items-end md:gap-28 md:pb-16 relative pb-16">
+      <motion.div className="flex flex-col md:flex-row justify-center md:items-end gap-4  md:gap-28 md:pb-16 relative pb-16">
         <motion.div className="w-[90vw] md:w-[30vw] h-[40vh] md:h-[30vw] md:mt-16 relative overflow-hidden">
           <motion.div
             className="w-[100vw] md:w-[35vw] h-[50vh] md:h-[35vw]  bg-no-repeat bg-cover absolute top-0"
@@ -38,7 +38,7 @@ export default function About() {
           </h5>
         </div>
       </motion.div>
-      <motion.div className="flex flex-col md:flex-row-reverse justify-center items-end md:gap-28 relative">
+      <motion.div className="flex flex-col md:flex-row-reverse justify-center items-end gap-4 md:gap-28 relative">
         <motion.div className="w-[90vw] md:w-[30vw] h-[40vh] md:h-[30vw] md:mt-16 relative overflow-hidden">
           <motion.div
             className="w-[100vw] md:w-[35vw] h-[50vh] md:h-[35vw]  bg-no-repeat bg-cover absolute top-0"

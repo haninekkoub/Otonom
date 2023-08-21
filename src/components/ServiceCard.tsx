@@ -26,7 +26,7 @@ export default function ServiceCard({
       onMouseEnter={() => setIsHovered(id)}
       className={clsx(
         [
-          "group overflow-hidden grow w-full md:w-1/3 h-[20vh] md:h-[30vh] lg:h-[65vh] xl:h-[50vh] bg-[#F2F2F5] ",
+          "group overflow-hidden grow w-full md:w-1/3 h-[22vh] md:h-[30vh] lg:h-[65vh] xl:h-[50vh] bg-[#F2F2F5] ",
           "ease duration-300 cursor-pointer rounded-xl relative text-gray",
           "flex gap-3 px-4 py-6",
         ],
