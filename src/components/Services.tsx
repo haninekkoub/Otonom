@@ -13,7 +13,7 @@ export default function Services({
 }): any {
   const [hovered, setIsHovered] = useState<number>(0);
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+    <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 w-full">
       {services.map((service, idx) => {
         return (
           <ServiceCard
