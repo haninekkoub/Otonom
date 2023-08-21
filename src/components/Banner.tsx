@@ -40,17 +40,17 @@ export default function Banner() {
   );
 
   return (
-    <section className="w-full h-[40vh] md:h-[150px] lg:h-[320px] bg-[#F2F2F5] overflow-hidden relative">
-      <motion.div className="flex gap-6 justify-center items-center rotate-12  lg:ml-0 ">
+    <section className="w-full h-[40vh] md:h-[150px] lg:h-[320px] bg-[#F2F2F5] relative overflow-hidden">
+      <motion.div className="flex gap-4 md:gap-6 justify-center items-center rotate-12 -ml-[20vw] lg:ml-0 ">
         <motion.div
-          className="flex flex-col justify-center items-center gap-6 grow"
+          className="flex flex-col justify-center items-center gap-4 md:gap-6 grow  -mt-[410px]"
           style={{ y: scrollLeft }}
         >
           {BannerImages[1].map((BannerImage, i) => {
             return (
               <motion.div
                 key={i}
-                className="w-[50vw] lg:w-full h-[100px] lg:h-[280px]"
+                className="w-[40vw] lg:w-full h-[110px] md:h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
@@ -61,14 +61,14 @@ export default function Banner() {
           })}
         </motion.div>
         <motion.div
-          className="flex flex-col justify-end items-center gap-6 grow"
+          className="flex flex-col justify-end items-center gap-4 md:gap-6 grow mt-[350px]"
           style={{ y: scrollCenter }}
         >
           {BannerImages[1].map((BannerImage, i) => {
             return (
               <motion.div
                 key={i}
-                className="w-[50vw] lg:w-full h-[100px] lg:h-[280px]"
+                className="w-[40vw] lg:w-full h-[110px] lg:h-[280px] "
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
@@ -79,14 +79,14 @@ export default function Banner() {
           })}
         </motion.div>
         <motion.div
-          className="flex flex-col justify-center items-center gap-6 grow"
+          className="flex flex-col justify-center items-center gap-4 md:gap-6 grow -mt-[300px]"
           style={{ y: scrollRight }}
         >
           {BannerImages[2].map((BannerImage, i) => {
             return (
               <motion.div
                 key={i}
-                className="w-[50vw] lg:w-full h-[100px] lg:h-[280px]"
+                className="w-[40vw] lg:w-full h-[110px] lg:h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
