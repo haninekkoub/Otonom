@@ -1,23 +1,38 @@
 ---
-import Logo_contact from "../assets/logo_contact.png"
-
+import Logo_contact from "../assets/logo_contact.png";
 ---
 
-<section class="bg-darkbackground ">
-    <div class="w-[90vw] lg:w-[60vw] mx-auto font-bold flex flex-col justify-center items-center gap-14 py-16 lg:py-32">
-        <h2 class="text-xl lg:text-contact text-gray text-center  leading-[123%]"> Let us bring your ideas to life. <span class="gradienText"> Contact us </span> <span class="text-white">to get started. </span> </h2>
-        <a href="/" class="text-[1.5rem] lg:text-3xl font-medium text-[#F2F2F5] opacity-50 hover:opacity-100 ease-in-out duration-300 cursor-pointer relative
-            before:absolute before:bg-white before:bottom-0 before:left-0 before:h-1 before:w-0 hover:before:animate-[widthIn_350ms_ease-in-out_forwards]
-            after:absolute after:bg-white after:bottom-0 after:right-0 after:h-1 after:w-0 hover:after:animate-[width_100ms_ease-in-out_forwards] after:animate-[widthOut_700ms_ease-in-out_forwards]">
-            hey@otonom.studio 
-        </a>
+<section class="bg-darkbackground">
+  <div
+    class="w-[85vw] md:w-[90vw] lg:w-[60vw] mx-auto font-bold flex flex-col justify-center items-center gap-14 py-16 lg:py-32"
+  >
+    <h2 class="text-xl lg:text-contact text-gray text-center leading-[123%]">
+      Let us bring your ideas to life. <span class="gradienText">
+        Contact us
+      </span>
+      <span class="text-white">to get started.</span>
+    </h2>
+    <a
+      href="/"
+      class="text-[1.5rem] lg:text-3xl font-bold md:font-medium text-[#F2F2F5] opacity-50 hover:opacity-100 ease-in-out duration-300 cursor-pointer relative before:absolute before:bg-white before:bottom-0 before:left-0 before:h-1 before:w-0 hover:before:animate-[widthIn_350ms_ease-in-out_forwards] after:absolute after:bg-white after:bottom-0 after:right-0 after:h-1 after:w-0 hover:after:animate-[width_100ms_ease-in-out_forwards] after:animate-[widthOut_700ms_ease-in-out_forwards]"
+    >
+      hey@otonom.studio
+    </a>
+  </div>
+  <div
+    class="lg:w-[50vw] h-[25vw] mx-auto relative bg-no-repeat"
+    style={{
+      backgroundImage: `url(${Logo_contact})`,
+      backgroundPosition: "top center",
+    }}
+  >
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-darkbackground opacity-70"
+    >
     </div>
-    <div class="lg:w-[50vw] h-[25vw] mx-auto relative bg-no-repeat" 
-        style={{ 
-            backgroundImage: `url(${Logo_contact})`,                 
-            backgroundPosition: "top center",
-        }}>
-        <div class="absolute inset-0 bg-gradient-to-t from-darkbackground opacity-70"></div>
-        <div class="absolute top-1/2 left-0 transform -translate-y-1/2 w-full h-1/2 bg-gradient-to-b from-darkbackground opacity-10"></div>
+    <div
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 w-full h-1/2 bg-gradient-to-b from-darkbackground opacity-10"
+    >
     </div>
+  </div>
 </section>

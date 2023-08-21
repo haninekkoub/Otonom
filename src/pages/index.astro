@@ -1,22 +1,24 @@
 ---
-import About from '../components/About';
-import Banner from '../components/Banner';
-import Contact from '../components/Contact.astro';
-import FooterLinks from '../components/FooterLinks.astro';
-import Hero from '../components/Hero.astro';
-import Services from '../components/Services.astro';
-import Works from '../components/Works.astro';
-import Layout from '../layouts/Layout.astro';
+import About from "../components/About";
+import Banner from "../components/Banner";
+import Contact from "../components/Contact.astro";
+import FooterLinks from "../components/FooterLinks.astro";
+import Hero from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
+import Services from "../components/Services.astro";
+import Works from "../components/Works.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Otonom">
-	<main>
-		<Hero />
-		<Banner client:load />
-		<Works />
-		<About client:load/>
-		<Services /> 
-		<Contact />
-		<FooterLinks />
-	</main>
+  <main>
+    <Navbar />
+    <Hero />
+    <Banner client:load />
+    <Works />
+    <About client:load />
+    <Services />
+    <Contact />
+    <FooterLinks />
+  </main>
 </Layout>

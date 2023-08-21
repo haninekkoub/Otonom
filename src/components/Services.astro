@@ -29,9 +29,11 @@ const ServicesInfo = [
 ];
 ---
 
-<section class="px-[5vw] lg:px-[12.5vw] py-16">
-  <div class="w-[75vw] lg:w-[18vw] lg:mx-auto text-black pb-16">
-    <h2 class="text-xl lg:text-3xl font-bold lg:text-center pb-2 leading-[123%]">
+<section class="px-4 md:px-[5vw] lg:px-[12.5vw] py-16">
+  <div class="w-[75vw] lg:w-[18vw] mx-auto pb-16 text-blue text-center">
+    <h2
+      class="text-xl lg:text-3xl font-bold lg:text-center pb-2 leading-[123%]"
+    >
       What we provide
     </h2>
     <p class="text-base text-medium opacity-50 lg:text-center leading-[178%]">
@@ -39,5 +41,4 @@ const ServicesInfo = [
     </p>
   </div>
   <Services services={ServicesInfo} client:only />
-
 </section>
