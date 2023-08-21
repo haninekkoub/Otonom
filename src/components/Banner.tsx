@@ -41,9 +41,9 @@ export default function Banner() {
 
   return (
     <section className="w-full h-[40vh] md:h-[150px] lg:h-[320px] bg-[#F2F2F5] relative overflow-hidden">
-      <motion.div className="flex gap-6 justify-center items-center rotate-12 -ml-[20vw] lg:-ml-1/3 ">
+      <motion.div className="flex gap-5 md:gap-6 justify-center items-center rotate-12 -ml-[20vw] lg:-ml-1/3 ">
         <motion.div
-          className="flex flex-col justify-center items-center gap-6 grow  -mt-[410px] md:mt-0"
+          className="flex flex-col justify-center items-center gap-5 md:gap-6 grow  -mt-[410px] md:mt-0"
           style={{ y: scrollLeft }}
         >
           {BannerImages[1].map((BannerImage, i) => {
@@ -61,7 +61,7 @@ export default function Banner() {
           })}
         </motion.div>
         <motion.div
-          className="flex flex-col justify-end items-center gap-6 grow mt-[350px] md:mt-0"
+          className="flex flex-col justify-end items-center gap-5 md:gap-6 grow mt-[350px] md:mt-0"
           style={{ y: scrollCenter }}
         >
           {BannerImages[1].map((BannerImage, i) => {
@@ -79,7 +79,7 @@ export default function Banner() {
           })}
         </motion.div>
         <motion.div
-          className="flex flex-col justify-center items-center gap-6 grow -mt-[300px] md:mt-0"
+          className="flex flex-col justify-center items-center gap-5 md:gap-6 grow -mt-[300px] md:mt-0"
           style={{ y: scrollRight }}
         >
           {BannerImages[2].map((BannerImage, i) => {
