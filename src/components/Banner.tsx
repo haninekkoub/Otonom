@@ -40,7 +40,7 @@ export default function Banner() {
   );
 
   return (
-    <section className="w-[100%] h-[40vh] md:h-[150px] lg:h-[320px] bg-[#F2F2F5] overflow-hidden relative">
+    <section className="w-full h-[40vh] md:h-[150px] lg:h-[320px] bg-[#F2F2F5] overflow-hidden relative bg-red-500">
       <motion.div className="flex gap-6 justify-center items-center rotate-12  lg:ml-0 ">
         <motion.div
           className="flex flex-col justify-center items-center gap-6 grow pt-[0] lg:pt-0"
