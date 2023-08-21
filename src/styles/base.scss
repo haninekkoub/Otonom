@@ -65,32 +65,3 @@
     url("../fonts/EudoxusSans-Bold.woff2") format('truetype');
   font-weight: 700;
 }
-
-
-//reset 
-
-html,
-body {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-* {
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-}
