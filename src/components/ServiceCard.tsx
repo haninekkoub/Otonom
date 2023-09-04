@@ -26,7 +26,7 @@ export default function ServiceCard({
       onMouseEnter={() => setIsHovered(id)}
       className={clsx(
         [
-          "group overflow-hidden grow w-full md:w-1/3 h-[22vh] md:h-[30vh] lg:h-[65vh] xl:h-[50vh] bg-[#F2F2F5] ",
+          "group overflow-hidden grow w-full lg:w-1/3 h-[22vh] lg:h-[65vh] xl:h-[50vh] bg-[#F2F2F5] ",
           "ease duration-300 cursor-pointer rounded-xl relative text-gray",
           "flex gap-3 px-4 py-6",
         ],
@@ -36,7 +36,7 @@ export default function ServiceCard({
             secondComponent,
           "flex-col justify-start md:justify-between items-start ":
             thirdComponent,
-          "md:w-[65vw] h-[45vh] md:h-[60vh] text-white": hoverState,
+          "lg:w-[65vw] h-[45vh] md:h-[50vh] lg:h-[60vh] text-white": hoverState,
           "bg-violet ": firstComponent && hoverState,
           "bg-[#FF742D] gap-6": secondComponent && hoverState,
           "bg-indigo-500 ": thirdComponent && hoverState,
@@ -52,12 +52,12 @@ export default function ServiceCard({
       <p
         className={clsx(
           [
-            "text-sm font-normal text-white leading-[200%] relative opacity-0 w-full",
+            "text-sm 2xl:text-lg font-normal text-white leading-[200%] relative opacity-0 w-full",
           ],
           {
-            "md:w-[20vw] w-full": firstComponent,
-            "md:w-full w-full": secondComponent,
-            "md:w-[20vw]": thirdComponent,
+            "md:w-[50vw] lg:w-[20vw] w-full ": firstComponent,
+            "lg:w-full w-full ": secondComponent,
+            "md:w-[45vw] lg:w-[20vw]": thirdComponent,
             "opacity-100 transition-all duration-300 ease-in-out delay-200":
               hoverState,
           }
@@ -66,11 +66,18 @@ export default function ServiceCard({
         {description}
       </p>
       <div
-        className={clsx(["absolute right-0 h-3/5 hidden md:block "], {
-          "bottom-0 w-[50%]": firstComponent,
-          "top-0 w-[65%]": secondComponent,
-          "top-[30%] w-[50%]": thirdComponent,
-        })}
+        className={clsx(
+          [
+            "absolute right-0 h-3/5 hidden md:block md:opacity-0 lg:opacity-100",
+          ],
+          {
+            "bottom-0 md:w-[35%] lg:w-[50%]": firstComponent,
+            "top-0 w-[65%]": secondComponent,
+            "top-[30%] w-[50%] ": thirdComponent,
+            "md:opacity-100 transition-all duration-300 ease-in-out delay-200":
+              hoverState,
+          }
+        )}
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",

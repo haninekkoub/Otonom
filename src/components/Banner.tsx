@@ -4,7 +4,6 @@ import banner_third from "../assets/banner_third.png";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
-//style={{ scaleX }}
 const BannerImages = [
   [{ url: banner_first }, { url: banner_second }, { url: banner_third }],
   [{ url: banner_second }, { url: banner_third }, { url: banner_first }],
@@ -40,17 +39,17 @@ export default function Banner() {
   );
 
   return (
-    <section className="w-full h-[40vh] md:h-[150px] lg:h-[320px] bg-[#F2F2F5] relative overflow-hidden">
+    <section className="w-full h-[40vh] md:h-[200px] lg:h-[230px] xl:h-[320px] bg-[#F2F2F5] relative overflow-hidden">
       <motion.div className="flex gap-5 md:gap-6 justify-center items-center rotate-12 -ml-[20vw] lg:-ml-1/3 ">
         <motion.div
-          className="flex flex-col justify-center items-center gap-5 md:gap-6 grow  -mt-[410px] md:mt-0"
+          className="flex flex-col justify-center items-center gap-5 md:gap-6 grow  -mt-[410px] md:mt-0 "
           style={{ y: scrollLeft }}
         >
           {BannerImages[1].map((BannerImage, i) => {
             return (
               <motion.div
                 key={i}
-                className="w-[45vw] lg:w-full h-[130px] md:h-[280px]"
+                className="w-[45vw] lg:w-[35vw] xl:w-full h-[130px] md:h-[180px] lg:h-[230px] xl:h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
@@ -68,7 +67,7 @@ export default function Banner() {
             return (
               <motion.div
                 key={i}
-                className="w-[45vw] lg:w-full h-[130px] lg:h-[280px] "
+                className="w-[45vw] lg:w-[35vw] xl:w-full h-[130px] md:h-[180px] lg:h-[230px] xl:h-[280px] "
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",
@@ -86,7 +85,7 @@ export default function Banner() {
             return (
               <motion.div
                 key={i}
-                className="w-[45vw] lg:w-full h-[130px] lg:h-[280px]"
+                className="w-[45vw] lg:w-[35vw] xl:w-full h-[130px] md:h-[180px] lg:h-[230px] xl:h-[280px]"
                 style={{
                   backgroundImage: `url(${BannerImage.url})`,
                   backgroundSize: "cover",

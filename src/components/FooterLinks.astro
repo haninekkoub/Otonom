@@ -62,10 +62,10 @@ const socialLinks: socialLink[] = [
 
 <section class="bg-darkbackground w-[100%] px-[5vw] md:px-[12.5vw] py-10">
   <div
-    class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 md:gap-0 pb-20"
+    class="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0 pb-20"
   >
     <div class="flex flex-col justify-stat items-center gap-3">
-      <Icon name="Logo" class="w-[20vw] lg:w-[4vw]" />
+      <Icon name="Logo" class="w-[20vw] md:w-[6vw] lg:w-[4vw]" />
       <h3 class="font-meduim text-white text-xl">Otonom</h3>
     </div>
     <ul class="flex flex-col gap-4 justify-start items-start">
@@ -86,7 +86,7 @@ const socialLinks: socialLink[] = [
     <div>
       <h4 class="text-white font-meduim text-xl pb-4">Socials</h4>
       <ul
-        class="text-base grid grid-cols-2 grid-rows-4 gap-x-12 md:gap-x-28 gap-y-4"
+        class="text-base grid grid-cols-2 grid-rows-4 gap-x-12 lg:gap-x-28 gap-y-4"
       >
         {
           socialLinks.map((socialLink) => {
@@ -106,7 +106,7 @@ const socialLinks: socialLink[] = [
   <div
     class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 md:gap-0 text-white text-sm font-normal"
   >
-    <span
+    <div
       class="w-full flex justify-between md:justify-start items-center md:gap-16"
     >
       <div>
@@ -119,9 +119,9 @@ const socialLinks: socialLink[] = [
           <LinksAnimation name="Cookies Policy" /></a
         >
       </div>
-    </span>
+    </div>
     <p class="whitespace-nowrap">
       Otonom Studio <span class="gradienText">©</span> 2023
     </p>
-  </div>
+  </div> 
 </section>

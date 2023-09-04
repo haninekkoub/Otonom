@@ -6,7 +6,7 @@ import FooterLinks from "../components/FooterLinks.astro";
 import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
 import Services from "../components/Services.astro";
-import Works from "../components/Works.astro";
+import Works from "../components/Works";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -15,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
     <Navbar />
     <Hero />
     <Banner client:load />
-    <Works />
+    <Works client:load />
     <About client:load />
     <Services />
     <Contact />
