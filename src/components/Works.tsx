@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CtaButton from "./CtaButton";
-import Project from "./project";
+import Project from "./Project";
 
 export default function Works() {
   const [backgroundColor, setBackgroundColor] = useState("#EAF5FB");
