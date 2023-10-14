@@ -1,5 +1,3 @@
-import { Icon } from "astro-icon";
-
 export default function CtaButton() {
   return (
     <div className="group flex flex-col md:flex-row gap-2 md:gap-11 justify-center items-center py-8 px-11 md:px-0 w-full mt-16 bg-darkbackground rounded-xl cursor-pointer overflow-hidden">
@@ -10,12 +8,8 @@ export default function CtaButton() {
         </p>
       </div>
       <div className="flex flex-col relative group-hover:animate-[rotateY_2s_ease_infinite]">
-        <span className="">
-          {/* <Icon name="Arrow - Down" class="w-[2.5rem]" /> */}
-        </span>
-        <span className="-translate-y-[425%] absolute top-0 left-0">
-          {/* <Icon name="Arrow - Down" class="w-[2.5rem]" /> */}
-        </span>
+        <span className=""></span>
+        <span className="-translate-y-[425%] absolute top-0 left-0"></span>
       </div>
     </div>
   );

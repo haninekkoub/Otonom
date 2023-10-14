@@ -5,7 +5,7 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +15,12 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
+
   <body class="font-Eudoxus relative overflow-x-hidden w-[100vw]">
     <slot />
   </body>
+
+  <style is:global>
+    @import "../styles/base.scss";
+  </style>
 </html>
-<style is:global>
-  @import "../styles/base.scss";
-</style>
